@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dig</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="qtype_prompt">Query Type</string>
+
+    <string-array name="qtype_array">
+        <item>A</item>
+        <item>AAAA</item>
+        <item>NS</item>
+        <item>CNAME</item>
+    </string-array>
+    <string name="tab">   </string>
+</resources>

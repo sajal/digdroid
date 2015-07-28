@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dnsquery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hostname to query"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/server"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Target server"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/qtype_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/qtype_array"
+        android:prompt="@string/qtype_prompt" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Run query"
+        android:onClick="runQuery" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/errors"
+        android:text="" />
+
+    <HorizontalScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/results"
+            android:text=""
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:typeface="monospace"
+            android:textColor="#fff2ffad"
+            android:background="#ff000000" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtt"
+        android:text="" />
+
+</LinearLayout>
+</ScrollView>
