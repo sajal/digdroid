@@ -138,6 +138,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         String output = result.getOutput();
         String err = result.getErr();
         if (output != null){
+            //Dont know how to get tab behaviour in Java...
             results.setText(output.replace("\t", "   "));
         }
         errors.setText(err);
