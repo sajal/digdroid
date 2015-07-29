@@ -55,7 +55,8 @@
             android:focusableInTouchMode="true"
             android:typeface="monospace"
             android:textColor="#fff2ffad"
-            android:background="#ff000000" />
+            android:background="#ff000000"
+            android:textIsSelectable="true" />
     </HorizontalScrollView>
 
     <TextView
