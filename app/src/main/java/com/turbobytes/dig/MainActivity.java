@@ -138,8 +138,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         String output = result.getOutput();
         String err = result.getErr();
         if (output != null){
-            //Dont know how to get tab behaviour in Java...
-            results.setText(output.replace("\t", "   "));
+            //Now getting preformatted output with spaces
+            results.setText(output);
         }
         errors.setText(err);
         rtt.setText(result.getRtt());
