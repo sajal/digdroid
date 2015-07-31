@@ -128,7 +128,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         String question = questionview.getText().toString();
         String server = serverview.getText().toString();
         if (!server.equals("") && !server.endsWith(":53")) {
-            server = server + ":53";
+            server = "[" + server + "]:53";
         }
         if (!question.endsWith(".")) {
             question = question + ".";
