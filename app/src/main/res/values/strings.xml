@@ -11,6 +11,12 @@
         <item>AAAA</item>
         <item>NS</item>
         <item>CNAME</item>
+        <item>MX</item>
+        <item>TXT</item>
+        <item>PTR</item>
+        <item>SOA</item>
+        <item>SRV</item>
+        <item>ANY</item>
     </string-array>
     <string name="tab">   </string>
 </resources>
